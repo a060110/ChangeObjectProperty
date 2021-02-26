@@ -65,13 +65,29 @@ namespace WindowsFormsApp1
             }
         }
 
+
+        Font _tmp = new Font("PMingLiU", 18, FontStyle.Italic);
+
         private void button4_Click(object sender, EventArgs e)
         {
-            /*if (MainLabel.Font==new Font("PMingLiU", 18pt,)
-            {
+            var font0 = new Font("PMingLiU", 18, FontStyle.Italic);
+            var font1 = new Font("Algerian", 22, FontStyle.Regular);
 
-            }*/
-            MainLabel.Font = new Font("Algerian", 22, FontStyle.Italic);
+            if (!MainLabel.Font.Equals(font0))
+            {
+                MainLabel.Font =font0;
+            }
+            else 
+            {
+                //this._tmp = MainLabel.Font;
+                MainLabel.Font = font1;
+            }
+            // this.
+            //if (MainLabel.Font==new Font("PMingLiU", 18pt)
+            //{
+
+            //}
+            //MainLabel.Font = new Font("Algerian", 22, FontStyle.Italic);
         }
     }
 }
